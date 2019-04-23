@@ -1,34 +1,28 @@
 {
   "info": {
-    "_postman_id": "5e1fb8b3-df0a-4652-bedb-74b53c4e4182",
-    "name": "ewbjxvi",
-    "description": "brm",
+    "_postman_id": "3aea4c98-61a4-4968-8fed-ea1a26feae18",
+    "name": "Random Thougths",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
     {
-      "name": "F1",
-      "item": [
+      "name": "http://api.forismatic.com/api/1.0/?method=getQuote&format=json&key=747&lang=en",
+      "event": [
         {
-          "name": "fb",
-          "_postman_id": "18a0e2a9-65d8-48d9-98dc-feec3c9d015f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "fb.com"
-          },
-          "response": []
+          "listen": "test",
+          "script": {
+            "id": "b6a1d0ec-eabf-4c30-8ec0-4d0b2e0dc1a5",
+            "exec": [
+              "var res = pm.response.json();",
+              "pm.environment.set(\"author\", res.quoteAuthor);",
+              "pm.environment.set(\"data\", res.quoteText);",
+              "pm.environment.set(\"website\", res.quoteLink);"
+            ],
+            "type": "text/javascript"
+          }
         }
       ],
-      "_postman_id": "b9627154-fbaf-4509-b9e6-642c6e789776",
-      "description": "new folders"
-    },
-    {
-      "name": "https://www.google.com/search?q=batman",
-      "_postman_id": "14dd2d3c-7594-4184-a691-df84b3b0c73b",
+      "_postman_id": "347efa47-265e-4f50-af31-40349bfff0ef",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -36,20 +30,35 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://www.google.com/search?q=batman",
-          "protocol": "https",
+          "raw": "http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en",
+          "protocol": "http",
           "host": [
-            "www",
-            "google",
+            "api",
+            "forismatic",
             "com"
           ],
           "path": [
-            "search"
+            "api",
+            "1.0",
+            ""
           ],
           "query": [
             {
-              "key": "q",
-              "value": "batman"
+              "key": "method",
+              "value": "getQuote"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "key",
+              "value": "10000",
+              "disabled": true
+            },
+            {
+              "key": "lang",
+              "value": "en"
             }
           ]
         }
@@ -57,15 +66,26 @@
       "response": []
     },
     {
-      "name": "Google",
-      "_postman_id": "3ac5c0da-1d4c-47ba-9577-c865453772bb",
+      "name": "https://hooks.slack.com/services/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",
+      "_postman_id": "3ea92a1e-3707-43c5-95a0-40c203459269",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
       "request": {
-        "method": "GET",
-        "header": [],
-        "url": "google.com"
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"attachments\": [\n        {\n            \"title\": \"{{data}}\",\n            \"text\": \"by {{author}}!\",\n            \"color\": \"#7CD197\"\n        }\n    ]\n}"
+        },
+        "url": "https://hooks.slack.com/services/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"
       },
       "response": []
     }
@@ -74,7 +94,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "1a35e578-83f6-41ac-b722-c397356bee8d",
+        "id": "96b0aad0-1231-4119-b4a1-a8d426c6d33c",
         "type": "text/javascript",
         "exec": [
           ""
@@ -84,26 +104,12 @@
     {
       "listen": "test",
       "script": {
-        "id": "d6fa9875-daba-4572-83c9-cf3a12ea24c0",
+        "id": "8ea9eb3d-c1b8-42c5-9e84-306a1366989a",
         "type": "text/javascript",
         "exec": [
           ""
         ]
       }
-    }
-  ],
-  "variable": [
-    {
-      "id": "2c0f7a36-a295-4532-b21d-8bcc750a78f2",
-      "key": "hahaha",
-      "value": "11111",
-      "type": "string"
-    },
-    {
-      "id": "4189ee2a-76d0-4669-bfd1-a75f104d4d11",
-      "key": "fhihfi",
-      "value": "hfihid",
-      "type": "string"
     }
   ]
 }
