@@ -5,5 +5,19 @@
     "description": "for tests,..,.,.,.,.,.,.,.,.,.,.,.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": []
+  "item": [
+    {
+      "name": "new req",
+      "_postman_id": "26c357c9-3d77-45e9-a6a2-4d9928130c9b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    }
+  ]
 }
