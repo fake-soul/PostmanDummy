@@ -8,7 +8,21 @@
   "item": [
     {
       "name": "f1",
-      "item": [],
+      "item": [
+        {
+          "name": "new",
+          "_postman_id": "535db47e-b2cb-4286-91a4-179d20dbfa12",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "76df98d6-8a13-4199-864d-6751d2e75e15"
     },
     {
