@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "5e1fb8b3-df0a-4652-bedb-74b53c4e4182",
-    "name": "DC power",
+    "name": "m v d",
     "description": "I am batman.\nAnd Robin.\nwe are from DC\nvhfuyfvfhuxyxhhoiuftycgh\nfjishfi\njiadhv\nvkasdvnksk",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
@@ -94,13 +94,13 @@
   ],
   "variable": [
     {
-      "id": "75de7791-bc8d-4001-ad6a-435f34d09285",
+      "id": "3fcc0620-5e3a-4a12-b546-8e6535fe31da",
       "key": "hahaha",
       "value": "11111",
       "type": "string"
     },
     {
-      "id": "cc41b521-cde3-4755-be54-6f43b2d0ba3b",
+      "id": "3f2d416a-387e-48b6-b25b-640bcd7be0a8",
       "key": "fhihfi",
       "value": "hfihid",
       "type": "string"
