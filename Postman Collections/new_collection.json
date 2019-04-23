@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "fdf4fa28-a6d9-402c-9b43-6e774ba27e7d",
     "name": "check collection",
-    "description": "for tests,..,.,.,.,.,.,.,.,.,.,.,.",
+    "description": "for tests",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -37,6 +37,28 @@
         "url": ""
       },
       "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "29b78b90-e91e-4220-87af-a6391c744b29",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "e78bb832-5248-4a24-be59-c5022029b186",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
     }
   ]
 }
